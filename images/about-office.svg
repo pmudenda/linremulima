@@ -1,0 +1,9 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="400" fill="#f8f9fa"/>
+  <rect x="50" y="50" width="200" height="300" fill="#171A32" opacity="0.9" rx="10"/>
+  <rect x="350" y="100" width="200" height="250" fill="#1199CC" opacity="0.8" rx="10"/>
+  <circle cx="150" cy="200" r="40" fill="#448DAF" opacity="0.7"/>
+  <circle cx="450" cy="225" r="30" fill="#81828B" opacity="0.5"/>
+  <text x="300" y="200" font-family="Playfair Display, serif" font-size="36" font-weight="700" fill="#3F4151" text-anchor="middle">Modern</text>
+  <text x="300" y="240" font-family="Playfair Display, serif" font-size="36" font-weight="700" fill="#3F4151" text-anchor="middle">Office</text>
+</svg>

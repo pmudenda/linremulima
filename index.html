@@ -1,0 +1,1648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Linire Mulima & Company - Premier Legal Services in Zambia</title>
+  <meta name="description" content="Leading commercial law firm in Zambia offering expert legal services in corporate law, banking, construction, and dispute resolution.">
+  <meta name="keywords" content="law firm zambia, commercial law, corporate lawyers, legal services lusaka">
+  <meta name="author" content="Linire Mulima & Company">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Linire Mulima & Company - Premier Legal Services">
+  <meta property="og:description" content="Expert legal services for businesses and corporations in Zambia">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://liniremulima.com">
+
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- CSS -->
+  <style>
+    :root{
+      --bg: #0b1220;
+      --card: rgba(255,255,255,.06);
+      --text: rgba(255,255,255,.92);
+      --muted: rgba(255,255,255,.70);
+
+      /* Adjust these to match your PDF colors exactly */
+      --primary: #b18b5b;   /* gold/bronze */
+      --primary2:#0f2a52;   /* deep navy */
+      --accent: #d1b17b;
+
+      --border: rgba(255,255,255,.12);
+      --shadow: 0 18px 40px rgba(0,0,0,.35);
+
+      --radius: 18px;
+      --radius2: 26px;
+      --max: 1180px;
+    }
+
+    *{ box-sizing:border-box; }
+    html{ scroll-behavior:smooth; }
+    body{
+      margin:0;
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background:
+        radial-gradient(1200px 600px at 20% -10%, rgba(177,139,91,.30), transparent 60%),
+        radial-gradient(900px 500px at 90% 10%, rgba(15,42,82,.45), transparent 60%),
+        #070b14;
+      color: var(--text);
+      overflow-x:hidden;
+    }
+    img{ max-width:100%; display:block; }
+    a{ color:inherit; text-decoration:none; }
+    .container{ width:min(var(--max), calc(100% - 32px)); margin:0 auto; }
+
+    /* Helpers */
+    .section{ padding: 84px 0; }
+    .section-head{ margin-bottom: 26px; }
+    .section-head h2{
+      font-family: "Playfair Display", serif;
+      letter-spacing: .2px;
+      font-size: clamp(28px, 3.2vw, 40px);
+      margin:0 0 8px;
+    }
+    .section-head p{ margin:0; color:var(--muted); max-width: 760px; }
+
+    .btn{
+      display:inline-flex;
+      gap:10px;
+      align-items:center;
+      justify-content:center;
+      padding: 12px 18px;
+      border-radius: 14px;
+      border:1px solid transparent;
+      font-weight: 600;
+      transition: .25s ease;
+      cursor:pointer;
+      white-space:nowrap;
+    }
+    .btn-sm{ padding: 10px 14px; border-radius: 12px; font-size: 14px; }
+    .btn-primary{
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      color:#1a1208;
+      box-shadow: 0 12px 25px rgba(177,139,91,.25);
+    }
+    .btn-primary:hover{ transform: translateY(-1px); box-shadow: 0 16px 35px rgba(177,139,91,.30); }
+    .btn-ghost{
+      background: rgba(255,255,255,.06);
+      border-color: rgba(255,255,255,.14);
+      color: rgba(255,255,255,.92);
+    }
+    .btn-ghost:hover{ background: rgba(255,255,255,.10); transform: translateY(-1px); }
+
+    .card{
+      background: linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.05));
+      border: 1px solid var(--border);
+      border-radius: var(--radius2);
+      box-shadow: var(--shadow);
+    }
+    .card.soft{ padding: 26px; }
+    .grid-2{
+      display:grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap: 22px;
+    }
+    @media (max-width: 980px){
+      .grid-2{ grid-template-columns:1fr; }
+    }
+
+    /* Topbar */
+    .topbar{
+      background: rgba(0,0,0,.25);
+      border-bottom: 1px solid rgba(255,255,255,.08);
+      backdrop-filter: blur(10px);
+    }
+    .topbar-wrap{
+      display:flex;
+      gap:14px;
+      align-items:center;
+      justify-content:space-between;
+      padding: 10px 0;
+      font-size: 14px;
+    }
+    .topbar-left, .topbar-right{ display:flex; gap:14px; align-items:center; flex-wrap:wrap; }
+    .topbar a{ color: rgba(255,255,255,.86); }
+    .topbar i{ color: var(--accent); margin-right: 6px; }
+    .topbar-btn{
+      padding: 8px 12px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.05);
+    }
+    .topbar-btn:hover{ background: rgba(255,255,255,.10); }
+
+    /* Header */
+    .header{
+      position: sticky;
+      top: 0;
+      z-index: 2000;
+      background: rgba(7,11,20,.65);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid rgba(255,255,255,.08);
+    }
+    .nav-wrap{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      padding: 14px 0;
+      gap: 18px;
+    }
+    .brand{ display:flex; align-items:center; gap:12px; }
+    .logo{ width:42px; height:42px; }
+    .brand-text{ display:flex; flex-direction:column; line-height:1.1; }
+    .brand-name{
+      font-family:"Playfair Display", serif;
+      font-weight: 800;
+      letter-spacing: .3px;
+    }
+    .brand-tagline{ font-size: 12.5px; color: var(--muted); }
+
+    .nav-links{
+      list-style:none;
+      display:flex;
+      gap: 18px;
+      align-items:center;
+      margin:0;
+      padding:0;
+    }
+    .nav-link{
+      color: rgba(255,255,255,.86);
+      font-weight: 600;
+      font-size: 14.5px;
+      padding: 10px 10px;
+      border-radius: 12px;
+      transition:.2s;
+    }
+    .nav-link:hover{ background: rgba(255,255,255,.06); }
+    .nav-link.active{ color: #1a1208; background: linear-gradient(135deg, var(--primary), var(--accent)); }
+
+    .nav-actions{ display:flex; align-items:center; gap: 12px; }
+
+    .nav-toggle{
+      width: 44px; height: 40px;
+      border-radius: 12px;
+      border:1px solid rgba(255,255,255,.14);
+      background: rgba(255,255,255,.06);
+      display:none;
+      cursor:pointer;
+    }
+    .nav-toggle span{
+      display:block;
+      height:2px;
+      width: 20px;
+      background: rgba(255,255,255,.9);
+      margin: 5px auto;
+      border-radius: 2px;
+    }
+
+    /* Mega menu */
+    .has-mega{ position:relative; }
+    .mega{
+      position:absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: calc(100% + 10px);
+      width: min(980px, 92vw);
+      background: rgba(10,14,25,.85);
+      border: 1px solid rgba(255,255,255,.14);
+      border-radius: 18px;
+      box-shadow: var(--shadow);
+      padding: 18px;
+      opacity:0;
+      visibility:hidden;
+      pointer-events:none;
+      transition: .22s ease;
+      backdrop-filter: blur(18px);
+    }
+    .has-mega:hover .mega{
+      opacity:1;
+      visibility:visible;
+      pointer-events:auto;
+    }
+    .mega-inner{
+      display:grid;
+      grid-template-columns: 1fr 1fr 1.2fr;
+      gap: 18px;
+    }
+    .mega-col h4{
+      margin: 6px 0 10px;
+      font-size: 14px;
+      letter-spacing: .3px;
+      color: rgba(255,255,255,.9);
+      text-transform: uppercase;
+    }
+    .mega-col a{
+      display:block;
+      padding: 10px 10px;
+      border-radius: 12px;
+      color: rgba(255,255,255,.84);
+    }
+    .mega-col a:hover{ background: rgba(255,255,255,.06); }
+    .mega-highlight{
+      border-left: 1px solid rgba(255,255,255,.10);
+      padding-left: 18px;
+    }
+    .mega-highlight p{ margin: 0 0 12px; color: var(--muted); }
+    .mega-cta{ display:flex; gap: 10px; flex-wrap:wrap; }
+    .mega-note{
+      margin-top: 12px;
+      padding-top: 12px;
+      border-top: 1px dashed rgba(255,255,255,.14);
+      color: rgba(255,255,255,.78);
+      display:flex; gap:10px; align-items:center;
+    }
+    .mega-note i{ color: var(--accent); }
+
+    @media (max-width: 1020px){
+      .nav-links{ display:none; }
+      .nav-toggle{ display:block; }
+    }
+
+    /* Mobile drawer */
+    .mobile-drawer{
+      position: fixed;
+      right: -100%;
+      top: 0;
+      width: min(420px, 92vw);
+      height: 100vh;
+      background: rgba(10,14,25,.92);
+      border-left: 1px solid rgba(255,255,255,.14);
+      box-shadow: var(--shadow);
+      transition: .28s ease;
+      z-index: 3000;
+      padding: 14px;
+      backdrop-filter: blur(18px);
+    }
+    .mobile-drawer.open{ right: 0; }
+    .mobile-head{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      padding: 10px 6px 12px;
+      border-bottom: 1px solid rgba(255,255,255,.10);
+    }
+    .mobile-title{ font-weight: 800; font-family:"Playfair Display", serif; }
+    .mobile-close{
+      width: 42px; height: 38px;
+      border-radius: 12px;
+      border:1px solid rgba(255,255,255,.14);
+      background: rgba(255,255,255,.06);
+      color: rgba(255,255,255,.9);
+      cursor:pointer;
+    }
+    .mobile-links{ padding: 10px 6px; display:flex; flex-direction:column; gap: 8px; }
+    .m-link{
+      padding: 12px 12px;
+      border-radius: 14px;
+      background: rgba(255,255,255,.05);
+      border: 1px solid rgba(255,255,255,.10);
+    }
+    .m-accordion{
+      background: rgba(255,255,255,.05);
+      border: 1px solid rgba(255,255,255,.10);
+      border-radius: 14px;
+      padding: 6px 10px;
+    }
+    .m-accordion summary{
+      cursor:pointer;
+      padding: 8px 6px;
+      font-weight: 700;
+    }
+    .m-accordion a{
+      display:block;
+      padding: 10px 10px;
+      border-radius: 12px;
+      color: rgba(255,255,255,.84);
+    }
+    .m-accordion a:hover{ background: rgba(255,255,255,.06); }
+    .mobile-cta{ display:flex; gap: 10px; flex-wrap:wrap; margin-top: 8px; }
+
+    /* Hero */
+    .hero{ position:relative; padding: 78px 0 48px; }
+    .hero-bg{
+      position:absolute; inset:0;
+      background:
+        radial-gradient(1200px 600px at 15% 0%, rgba(177,139,91,.30), transparent 60%),
+        radial-gradient(900px 500px at 90% 10%, rgba(15,42,82,.55), transparent 60%),
+        linear-gradient(180deg, rgba(255,255,255,.04), transparent 55%);
+      pointer-events:none;
+    }
+    .hero-wrap{
+      position:relative;
+      display:grid;
+      grid-template-columns: 1.05fr .95fr;
+      gap: 24px;
+      align-items:center;
+    }
+    @media (max-width: 980px){
+      .hero-wrap{ grid-template-columns: 1fr; }
+      .hero{ padding-top: 54px; }
+    }
+    .pill{
+      display:inline-flex;
+      gap:10px;
+      align-items:center;
+      padding: 10px 14px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.06);
+      border:1px solid rgba(255,255,255,.12);
+      color: rgba(255,255,255,.86);
+    }
+    .pill i{ color: var(--accent); }
+    .hero-title{
+      font-family:"Playfair Display", serif;
+      font-size: clamp(34px, 4.8vw, 60px);
+      line-height: 1.04;
+      margin: 18px 0 12px;
+    }
+    .accent{ color: var(--accent); }
+    .hero-subtitle{
+      color: var(--muted);
+      font-size: 16px;
+      max-width: 620px;
+      line-height: 1.7;
+    }
+    .hero-actions{ display:flex; gap: 12px; flex-wrap:wrap; margin-top: 18px; }
+    .hero-stats{
+      display:grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 20px;
+    }
+    .stat{
+      background: rgba(255,255,255,.06);
+      border: 1px solid rgba(255,255,255,.12);
+      border-radius: 18px;
+      padding: 14px 14px;
+    }
+    .stat-number{
+      display:block;
+      font-weight: 900;
+      font-size: 20px;
+      color: var(--accent);
+    }
+    .stat-label{ color: rgba(255,255,255,.76); font-size: 13px; }
+
+    .hero-card{
+      overflow:hidden;
+      border-radius: 26px;
+      border: 1px solid rgba(255,255,255,.14);
+      background: rgba(255,255,255,.04);
+      box-shadow: var(--shadow);
+    }
+    .hero-card img{
+      height: 360px;
+      width:100%;
+      object-fit:cover;
+      filter: contrast(1.02) saturate(1.05);
+    }
+    .hero-card-info{
+      display:flex;
+      justify-content:space-between;
+      gap: 10px;
+      padding: 14px 16px;
+      border-top: 1px solid rgba(255,255,255,.10);
+      background: rgba(0,0,0,.20);
+    }
+    .mini{ display:flex; gap: 10px; align-items:center; color: rgba(255,255,255,.82); font-size: 13px; }
+    .mini i{ color: var(--accent); }
+
+    .hero-trust{
+      margin-top: 12px;
+      display:grid;
+      grid-template-columns: repeat(2, minmax(0,1fr));
+      gap: 10px;
+    }
+    .trust-item{
+      padding: 12px 12px;
+      border-radius: 16px;
+      background: rgba(255,255,255,.06);
+      border: 1px solid rgba(255,255,255,.12);
+      color: rgba(255,255,255,.82);
+      font-weight: 600;
+      display:flex; gap: 10px; align-items:center;
+    }
+    .trust-item i{ color: var(--accent); }
+
+    /* Trust bar */
+    .trustbar{
+      padding: 18px 0;
+      border-top: 1px solid rgba(255,255,255,.08);
+      border-bottom: 1px solid rgba(255,255,255,.08);
+      background: rgba(255,255,255,.03);
+    }
+    .trustbar-wrap{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap: 14px;
+      flex-wrap:wrap;
+    }
+    .trust-title{
+      color: rgba(255,255,255,.78);
+      font-weight: 700;
+      font-size: 14px;
+    }
+    .trust-logos{
+      display:flex;
+      gap: 18px;
+      align-items:center;
+      flex-wrap:wrap;
+      opacity: .9;
+    }
+    .trust-logos img{
+      height: 26px;
+      width: auto;
+      filter: grayscale(1) contrast(1.1);
+      opacity: .85;
+    }
+    .trust-logos img:hover{
+      filter: none;
+      opacity: 1;
+    }
+
+    /* About */
+    .icon-cards{ display:grid; gap: 12px; margin-top: 16px; }
+    .icon-card{
+      display:flex; gap: 12px; align-items:flex-start;
+      padding: 14px;
+      border-radius: 18px;
+      background: rgba(255,255,255,.05);
+      border: 1px solid rgba(255,255,255,.10);
+    }
+    .icon-card i{ color: var(--accent); margin-top: 2px; }
+    .icon-card strong{ display:block; }
+    .icon-card span{ color: var(--muted); font-size: 14px; }
+
+    .about-media{
+      position:relative;
+      overflow:hidden;
+      border-radius: 26px;
+      border: 1px solid rgba(255,255,255,.12);
+      box-shadow: var(--shadow);
+      background: rgba(255,255,255,.05);
+    }
+    .about-media img{
+      height:100%;
+      min-height:340px;
+      object-fit:cover;
+      opacity:.92;
+      filter: saturate(1.05);
+    }
+    .media-badge{
+      position:absolute;
+      left: 16px;
+      bottom: 16px;
+      padding: 10px 14px;
+      border-radius: 14px;
+      background: rgba(0,0,0,.45);
+      border: 1px solid rgba(255,255,255,.16);
+      display:flex; gap:10px; align-items:center;
+      backdrop-filter: blur(10px);
+    }
+
+    /* Gallery */
+    .gallery-grid{
+      display:grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 14px;
+    }
+    .g-item{
+      position:relative;
+      overflow:hidden;
+      border-radius: 22px;
+      border: 1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.05);
+      min-height: 180px;
+    }
+    .g-item img{
+      width:100%;
+      height: 100%;
+      object-fit: cover;
+      transform: scale(1.02);
+      transition: .28s ease;
+      filter: saturate(1.05) contrast(1.02);
+    }
+    .g-item:hover img{ transform: scale(1.06); }
+    .g-label{
+      position:absolute;
+      left: 12px;
+      bottom: 12px;
+      display:inline-flex;
+      gap: 10px;
+      align-items:center;
+      padding: 10px 12px;
+      border-radius: 14px;
+      background: rgba(0,0,0,.45);
+      border: 1px solid rgba(255,255,255,.14);
+      backdrop-filter: blur(12px);
+      color: rgba(255,255,255,.88);
+      font-weight: 700;
+      font-size: 13px;
+    }
+    .g-label i{ color: var(--accent); }
+
+    .g-big{ grid-column: span 6; min-height: 380px; }
+    .gallery-grid .g-item:nth-child(2){ grid-column: span 3; }
+    .gallery-grid .g-item:nth-child(3){ grid-column: span 3; }
+    .gallery-grid .g-item:nth-child(4){ grid-column: span 4; }
+    .gallery-grid .g-item:nth-child(5){ grid-column: span 2; }
+
+    @media (max-width: 980px){
+      .g-big{ grid-column: span 12; min-height: 260px; }
+      .gallery-grid .g-item:nth-child(2),
+      .gallery-grid .g-item:nth-child(3),
+      .gallery-grid .g-item:nth-child(4),
+      .gallery-grid .g-item:nth-child(5){
+        grid-column: span 12;
+      }
+    }
+
+    /* Practice */
+    .cards-3{
+      display:grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+    }
+    @media (max-width: 980px){
+      .cards-3{ grid-template-columns: 1fr; }
+    }
+    .p-card{
+      padding: 22px;
+      border-radius: 22px;
+      background: rgba(255,255,255,.06);
+      border:1px solid rgba(255,255,255,.12);
+      transition: .22s ease;
+      position:relative;
+      overflow:hidden;
+    }
+    .p-card::before{
+      content:"";
+      position:absolute; inset:-1px;
+      background: radial-gradient(420px 220px at 20% 0%, rgba(177,139,91,.22), transparent 60%);
+      opacity: 0;
+      transition: .22s ease;
+    }
+    .p-card:hover{ transform: translateY(-3px); border-color: rgba(255,255,255,.18); }
+    .p-card:hover::before{ opacity: 1; }
+    .p-card > *{ position:relative; }
+
+    .p-cover{
+      height: 150px;
+      border-radius: 18px;
+      overflow:hidden;
+      border: 1px solid rgba(255,255,255,.10);
+      margin-bottom: 14px;
+      background: rgba(255,255,255,.04);
+    }
+    .p-cover img{
+      width:100%;
+      height:100%;
+      object-fit: cover;
+      filter: saturate(1.05) contrast(1.02);
+      transition: .25s ease;
+    }
+    .p-card:hover .p-cover img{ transform: scale(1.04); }
+
+    .p-top{ display:flex; align-items:center; justify-content:space-between; margin-bottom: 10px; }
+    .p-icon{
+      width: 44px; height: 44px;
+      display:grid; place-items:center;
+      border-radius: 16px;
+      background: rgba(177,139,91,.16);
+      border:1px solid rgba(177,139,91,.24);
+    }
+    .p-icon i{ color: var(--accent); }
+    .p-badge{
+      font-size: 12px;
+      color: rgba(255,255,255,.78);
+      padding: 6px 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,.14);
+      background: rgba(0,0,0,.18);
+    }
+    .p-card h3{ margin: 8px 0 8px; font-size: 18px; }
+    .p-card p{ margin:0 0 12px; color: var(--muted); line-height:1.65; }
+    .p-card ul{ margin:0; padding-left: 18px; color: rgba(255,255,255,.82); }
+    .p-card li{ margin: 6px 0; }
+    .p-link{
+      margin-top: 14px;
+      display:inline-flex; gap: 10px; align-items:center;
+      color: var(--accent);
+      font-weight: 700;
+    }
+
+    /* Team */
+    .team-wrap{ display:flex; justify-content:center; }
+    .team-card{
+      display:grid;
+      grid-template-columns: 280px 1fr;
+      gap: 18px;
+      width: min(980px, 100%);
+      padding: 18px;
+      border-radius: 26px;
+      background: rgba(255,255,255,.06);
+      border: 1px solid rgba(255,255,255,.12);
+    }
+    @media (max-width: 860px){
+      .team-card{ grid-template-columns: 1fr; }
+    }
+    .team-media{
+      overflow:hidden;
+      border-radius: 22px;
+      border: 1px solid rgba(255,255,255,.12);
+    }
+    .team-media img{ height: 320px; width:100%; object-fit: cover; }
+    .role{ color: var(--accent); font-weight: 700; margin-top: 6px; }
+    .tags{ display:flex; gap: 8px; flex-wrap:wrap; margin-top: 10px; }
+    .tag{
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.06);
+      border:1px solid rgba(255,255,255,.12);
+      font-size: 13px;
+      color: rgba(255,255,255,.82);
+    }
+    .team-actions{ display:flex; gap: 10px; flex-wrap:wrap; margin-top: 14px; }
+
+    /* Testimonials */
+    .t-grid{
+      display:grid;
+      grid-template-columns: repeat(3, minmax(0,1fr));
+      gap: 16px;
+    }
+    @media (max-width: 980px){
+      .t-grid{ grid-template-columns: 1fr; }
+    }
+    .t-card{
+      padding: 22px;
+      border-radius: 22px;
+      background: rgba(255,255,255,.06);
+      border: 1px solid rgba(255,255,255,.12);
+    }
+    .stars{ color: var(--accent); display:flex; gap: 6px; margin-bottom: 12px; }
+    .t-card p{ color: rgba(255,255,255,.82); line-height: 1.7; margin: 0 0 14px; }
+    .t-author{ display:flex; gap: 12px; align-items:center; }
+    .avatar{
+      width: 44px; height: 44px;
+      border-radius: 16px;
+      display:grid; place-items:center;
+      background: rgba(177,139,91,.18);
+      border: 1px solid rgba(177,139,91,.24);
+      color: var(--accent);
+      font-weight: 900;
+    }
+    .t-author span{ display:block; color: var(--muted); font-size: 13px; }
+
+    /* Contact */
+    .contact-grid .info-row{
+      display:flex; gap: 12px;
+      padding: 12px 0;
+      border-bottom: 1px solid rgba(255,255,255,.08);
+    }
+    .contact-grid .info-row:last-child{ border-bottom:none; }
+    .info-row i{ color: var(--accent); margin-top: 2px; }
+    .info-row p{ margin: 6px 0 0; color: var(--muted); }
+    .mini-cta{ display:flex; gap: 10px; flex-wrap:wrap; margin-top: 14px; }
+
+    form .form-row{ display:grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 12px; }
+    @media (max-width: 720px){ form .form-row{ grid-template-columns: 1fr; } }
+
+    .form-group{ display:flex; flex-direction:column; gap: 8px; margin-bottom: 12px; }
+    label{ font-weight: 700; font-size: 14px; color: rgba(255,255,255,.86); }
+    input, select, textarea{
+      width:100%;
+      border-radius: 14px;
+      border: 1px solid rgba(255,255,255,.14);
+      background: rgba(0,0,0,.18);
+      padding: 12px 12px;
+      color: rgba(255,255,255,.92);
+      outline:none;
+    }
+    input:focus, select:focus, textarea:focus{
+      border-color: rgba(209,177,123,.55);
+      box-shadow: 0 0 0 4px rgba(209,177,123,.14);
+    }
+    .form-check{ display:flex; gap: 10px; align-items:flex-start; margin: 10px 0 16px; }
+    .form-check input{ width:auto; margin-top: 4px; }
+
+    /* Map */
+    .map{
+      overflow:hidden;
+      border-radius: 18px;
+      border: 1px solid rgba(255,255,255,.12);
+    }
+    .map iframe{ width:100%; height: 240px; border:0; }
+
+    /* Footer */
+    .footer{
+      padding: 58px 0 28px;
+      background: rgba(0,0,0,.22);
+      border-top: 1px solid rgba(255,255,255,.10);
+    }
+    .footer-grid{
+      display:grid;
+      grid-template-columns: 1.2fr .9fr 1fr 1.1fr;
+      gap: 18px;
+    }
+    @media (max-width: 1020px){
+      .footer-grid{ grid-template-columns: 1fr; }
+    }
+    .footer h4{
+      margin: 0 0 12px;
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: .4px;
+    }
+    .footer-col ul{ margin:0; padding:0; list-style:none; }
+    .footer-col li{ margin: 10px 0; color: rgba(255,255,255,.80); }
+    .footer-col a:hover{ color: var(--accent); }
+
+    .footer-logo{ width: 48px; height: 48px; margin-bottom: 10px; }
+    .footer-social{ display:flex; gap: 12px; margin-top: 10px; }
+    .footer-social a{
+      width: 40px; height: 40px;
+      display:grid; place-items:center;
+      border-radius: 14px;
+      background: rgba(255,255,255,.06);
+      border: 1px solid rgba(255,255,255,.12);
+    }
+    .footer-social a:hover{ background: rgba(255,255,255,.10); }
+
+    .footer-contact i{ color: var(--accent); margin-right: 8px; }
+
+    .newsletter label{ display:block; margin-top: 10px; margin-bottom: 8px; }
+    .newsletter-row{ display:flex; gap: 10px; }
+    .newsletter-row input{ flex:1; }
+    .newsletter small{ display:block; margin-top: 8px; color: var(--muted); }
+
+    .footer-bottom{
+      margin-top: 22px;
+      padding-top: 16px;
+      border-top: 1px solid rgba(255,255,255,.10);
+      display:flex;
+      gap: 12px;
+      justify-content:space-between;
+      flex-wrap:wrap;
+      color: rgba(255,255,255,.72);
+    }
+    .fineprint{ max-width: 720px; }
+  </style>
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LegalService",
+    "name": "Linire Mulima & Company",
+    "url": "https://liniremulima.com",
+    "logo": "https://liniremulima.com/images/logo.png",
+    "description": "Premier commercial law practice in Zambia offering expert legal services",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Lot 3052/M/E Zambezi Road Extension, Foxdale",
+      "addressLocality": "Lusaka",
+      "addressCountry": "Zambia"
+    },
+    "telephone": "+260 977 450621",
+    "email": "linire@liniremulima.com",
+    "openingHours": "Mo-Fr 08:00-17:00",
+    "priceRange": "$$$"
+  }
+  </script>
+</head>
+
+<body>
+  <!-- Top Bar -->
+  <div class="topbar">
+    <div class="container topbar-wrap">
+      <div class="topbar-left">
+        <a href="tel:+260977450621"><i class="fas fa-phone"></i> +260 977 450621</a>
+        <a href="mailto:linire@liniremulima.com"><i class="fas fa-envelope"></i> linire@liniremulima.com</a>
+      </div>
+      <div class="topbar-right">
+        <span><i class="fas fa-clock"></i> Mon–Fri: 08:00–17:00</span>
+        <a class="topbar-btn" href="#contact"><i class="fas fa-calendar-check"></i> Book Consultation</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header / Navbar -->
+  <header class="header" id="header">
+    <nav class="navbar">
+      <div class="container nav-wrap">
+        <!-- Brand -->
+        <a class="brand" href="#home" aria-label="Go to home">
+          <img src="images/logo.svg" alt="Linire Mulima & Company" class="logo" />
+          <div class="brand-text">
+            <span class="brand-name">Linire Mulima & Company</span>
+            <span class="brand-tagline">Commercial Law Practice</span>
+          </div>
+        </a>
+
+        <!-- Desktop Menu -->
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+
+          <!-- Mega Menu -->
+          <li class="has-mega">
+            <a href="#practice" class="nav-link">
+              Practice Areas <i class="fas fa-angle-down"></i>
+            </a>
+
+            <div class="mega">
+              <div class="mega-inner">
+                <div class="mega-col">
+                  <h4>Corporate & Commercial</h4>
+                  <a href="#practice">Corporate & Business Advisory</a>
+                  <a href="#practice">Commercial Law</a>
+                  <a href="#practice">Corporate Governance</a>
+                  <a href="#practice">Regulatory & Compliance</a>
+                </div>
+
+                <div class="mega-col">
+                  <h4>Finance & Property</h4>
+                  <a href="#practice">Banking & Finance Law</a>
+                  <a href="#practice">Property Law & Conveyancing</a>
+                  <a href="#practice">Employment & Labour Law</a>
+                  <a href="#practice">Dispute Resolution</a>
+                </div>
+
+                <div class="mega-col mega-highlight">
+                  <h4>Need urgent legal help?</h4>
+                  <p>
+                    Speak to a qualified legal professional today. We advise businesses,
+                    investors, and institutions across Zambia.
+                  </p>
+                  <div class="mega-cta">
+                    <a class="btn btn-primary btn-sm" href="#contact">
+                      Request Consultation
+                    </a>
+                    <a class="btn btn-ghost btn-sm" href="tel:+260977450621">
+                      Call Now
+                    </a>
+                  </div>
+                  <div class="mega-note">
+                    <i class="fas fa-shield-alt"></i>
+                    Confidential • Efficient • Results-driven
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li><a href="#team" class="nav-link">Team</a></li>
+          <li><a href="#insights" class="nav-link">Insights</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+
+        <!-- Right CTA -->
+        <div class="nav-actions">
+          <a href="#contact" class="btn btn-primary btn-sm">
+            <i class="fas fa-paper-plane"></i> Consultation
+          </a>
+
+          <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Drawer -->
+      <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+        <div class="mobile-head">
+          <span class="mobile-title">Menu</span>
+          <button class="mobile-close" id="mobileClose" aria-label="Close menu">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+
+        <div class="mobile-links">
+          <a href="#home" class="m-link">Home</a>
+          <a href="#about" class="m-link">About</a>
+          <details class="m-accordion">
+            <summary>Practice Areas</summary>
+            <a href="#practice">Corporate & Business Advisory</a>
+            <a href="#practice">Commercial Law</a>
+            <a href="#practice">Construction Law</a>
+            <a href="#practice">Corporate Governance</a>
+            <a href="#practice">Regulatory & Compliance</a>
+            <a href="#practice">Banking & Finance</a>
+            <a href="#practice">Property Law</a>
+            <a href="#practice">Employment & Labour</a>
+            <a href="#practice">Dispute Resolution</a>
+          </details>
+          <a href="#gallery" class="m-link">Our Offices</a>
+          <a href="#team" class="m-link">Team</a>
+          <a href="#insights" class="m-link">Insights</a>
+          <a href="#contact" class="m-link">Contact</a>
+
+          <div class="mobile-cta">
+            <a class="btn btn-primary" href="#contact">Book Consultation</a>
+            <a class="btn btn-ghost" href="tel:+260977450621">Call +260 977 450621</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="hero-bg"></div>
+
+    <div class="container hero-wrap">
+      <div class="hero-left">
+        <div class="pill">
+          <i class="fas fa-award"></i>
+          <span>27+ Years of Commercial Legal Excellence</span>
+        </div>
+
+        <h1 class="hero-title">
+          Strategic Legal Counsel for <span class="accent">Business Success</span>
+        </h1>
+
+        <p class="hero-subtitle">
+          Trusted legal advisors for businesses, corporations, and investors in Zambia.
+          We deliver practical, forward-thinking legal solutions with integrity and results.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary">
+            <i class="fas fa-calendar-check"></i> Request Consultation
+          </a>
+          <a href="#practice" class="btn btn-ghost">
+            Explore Practice Areas <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-number">27+</span>
+            <span class="stat-label">Years Experience</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">500+</span>
+            <span class="stat-label">Matters Handled</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">95%</span>
+            <span class="stat-label">Client Satisfaction</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="hero-card">
+          <!-- Use your own photo in /images/hero-professional.jpg -->
+          <img src="images/inaki.jpg" alt="Linire Mulima & Company Office">
+          <div class="hero-card-info">
+            <div class="mini">
+              <i class="fas fa-location-dot"></i>
+              <span>Foxdale, Lusaka • Zambia</span>
+            </div>
+            <div class="mini">
+              <i class="fas fa-shield-halved"></i>
+              <span>Confidential Consultations</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-trust">
+          <div class="trust-item"><i class="fas fa-check"></i> Corporate & Commercial</div>
+          <div class="trust-item"><i class="fas fa-check"></i> Banking & Finance</div>
+          <div class="trust-item"><i class="fas fa-check"></i> Construction & FIDIC</div>
+          <div class="trust-item"><i class="fas fa-check"></i> Dispute Resolution</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust bar -->
+  <section class="trustbar">
+    <div class="container trustbar-wrap">
+      <span class="trust-title">Trusted by clients across sectors</span>
+      <div class="trust-logos">
+        <!-- Replace with actual client logos (SVG/PNG) if permitted -->
+        <img src="images/client-1.svg" alt="Client logo 1">
+        <img src="images/client-2.svg" alt="Client logo 2">
+        <img src="images/client-3.svg" alt="Client logo 3">
+        <img src="images/client-4.svg" alt="Client logo 4">
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section about">
+    <div class="container">
+      <div class="section-head">
+        <h2>About Our Firm</h2>
+        <p>We combine legal expertise with commercial insight to deliver practical solutions.</p>
+      </div>
+
+      <div class="grid-2">
+        <div class="card soft">
+          <h3>Trusted Legal Partners for Business</h3>
+          <p>
+            Linire Mulima & Company is a premier commercial law practice committed to empowering businesses with practical,
+            strategic, and forward-thinking legal solutions. We support entrepreneurs, corporations, financiers,
+            and investors in navigating legal complexities in Zambia.
+          </p>
+
+          <div class="icon-cards">
+            <div class="icon-card">
+              <i class="fas fa-shield-alt"></i>
+              <div>
+                <strong>Integrity</strong>
+                <span>Ethical practice & transparency</span>
+              </div>
+            </div>
+            <div class="icon-card">
+              <i class="fas fa-trophy"></i>
+              <div>
+                <strong>Excellence</strong>
+                <span>High-quality legal work</span>
+              </div>
+            </div>
+            <div class="icon-card">
+              <i class="fas fa-chart-line"></i>
+              <div>
+                <strong>Results</strong>
+                <span>Commercial outcomes that matter</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-media">
+          <!-- Replace with your own office image -->
+          <img src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?auto=format&fit=crop&w=1600&q=80" alt="Our Law Office">
+          <div class="media-badge">
+            <i class="fas fa-award"></i>
+            <span>Client-first. Results-driven.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="section gallery" id="gallery">
+    <div class="container">
+      <div class="section-head">
+        <h2>Our Offices</h2>
+        <p>A professional environment designed for confidential and effective consultations.</p>
+      </div>
+
+      <div class="gallery-grid">
+        <a class="g-item g-big" href="images/office-1.jpg">
+          <img src="images/office-1.jpg" alt="Linire Mulima & Company reception area">
+          <span class="g-label"><i class="fas fa-building"></i> Reception</span>
+        </a>
+
+        <a class="g-item" href="images/room.jpg">
+          <img src="images/room.jpg" alt="Private consultation room">
+          <span class="g-label"><i class="fas fa-user-shield"></i> Consultation Room</span>
+        </a>
+
+        <a class="g-item" href="images/meeting.jpg">
+          <img src="images/meeting.jpg" alt="Meeting room and board table">
+          <span class="g-label"><i class="fas fa-handshake"></i> Meeting Room</span>
+        </a>
+
+<!--        <a class="g-item" href="images/office-4.jpg">-->
+<!--          <img src="images/office-4.jpg" alt="Law library and resources">-->
+<!--          <span class="g-label"><i class="fas fa-book"></i> Library</span>-->
+<!--        </a>-->
+
+<!--        <a class="g-item" href="images/office-5.jpg">-->
+<!--          <img src="images/office-5.jpg" alt="Office exterior view">-->
+<!--          <span class="g-label"><i class="fas fa-location-dot"></i> Office Location</span>-->
+<!--        </a>-->
+      </div>
+    </div>
+  </section>
+
+  <!-- Practice Areas -->
+  <section id="practice" class="section practice">
+    <div class="container">
+      <div class="section-head">
+        <h2>Practice Areas</h2>
+        <p>Comprehensive legal services across major commercial sectors.</p>
+      </div>
+
+      <div class="cards-3">
+        <div class="p-card">
+          <div class="p-cover">
+            <img src="images/practice-corporate.jpg" alt="Corporate & Business Advisory">
+          </div>
+          <div class="p-top">
+            <div class="p-icon"><i class="fas fa-briefcase"></i></div>
+            <span class="p-badge">Advisory</span>
+          </div>
+          <h3>Corporate & Business Advisory</h3>
+          <p>Governance, compliance and strategic guidance across the business lifecycle.</p>
+          <ul>
+            <li>Incorporation & restructuring</li>
+            <li>Mergers & acquisitions</li>
+            <li>Regulatory compliance</li>
+            <li>Board governance</li>
+          </ul>
+          <a class="p-link" href="#contact">Talk to us <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="p-card">
+          <div class="p-cover">
+            <img src="images/practice-commercial.jpg" alt="Commercial Law">
+          </div>
+          <div class="p-top">
+            <div class="p-icon"><i class="fas fa-handshake"></i></div>
+            <span class="p-badge">Contracts</span>
+          </div>
+          <h3>Commercial Law</h3>
+          <p>Drafting, review, negotiation and enforcement of commercial agreements.</p>
+          <ul>
+            <li>Contract drafting & negotiation</li>
+            <li>Commercial agreements</li>
+            <li>Distribution & agency</li>
+            <li>Risk allocation</li>
+          </ul>
+          <a class="p-link" href="#contact">Talk to us <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="p-card">
+          <div class="p-cover">
+            <img src="images/practice-construction.jpg" alt="Construction Law">
+          </div>
+          <div class="p-top">
+            <div class="p-icon"><i class="fas fa-building"></i></div>
+            <span class="p-badge">FIDIC</span>
+          </div>
+          <h3>Construction Law</h3>
+          <p>FIDIC agreements, disputes, and advisory across infrastructure projects.</p>
+          <ul>
+            <li>FIDIC contract administration</li>
+            <li>Claims & variations</li>
+            <li>Dispute avoidance</li>
+            <li>Adjudication support</li>
+          </ul>
+          <a class="p-link" href="#contact">Talk to us <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="p-card">
+          <div class="p-cover">
+            <img src="images/practice-banking.jpg" alt="Banking & Finance Law">
+          </div>
+          <div class="p-top">
+            <div class="p-icon"><i class="fas fa-university"></i></div>
+            <span class="p-badge">Finance</span>
+          </div>
+          <h3>Banking & Finance Law</h3>
+          <p>Loan documentation, security instruments, and regulatory banking compliance.</p>
+          <ul>
+            <li>Loan agreements</li>
+            <li>Security documentation</li>
+            <li>Financial regulations</li>
+            <li>Banking compliance</li>
+          </ul>
+          <a class="p-link" href="#contact">Talk to us <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="p-card">
+          <div class="p-cover">
+            <img src="images/practice-property.jpg" alt="Property Law & Conveyancing">
+          </div>
+          <div class="p-top">
+            <div class="p-icon"><i class="fas fa-home"></i></div>
+            <span class="p-badge">Property</span>
+          </div>
+          <h3>Property Law & Conveyancing</h3>
+          <p>Property transfers, title due diligence, leases, and real estate advisory.</p>
+          <ul>
+            <li>Property transfers</li>
+            <li>Title searches</li>
+            <li>Lease agreements</li>
+            <li>Property disputes</li>
+          </ul>
+          <a class="p-link" href="#contact">Talk to us <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="p-card">
+          <div class="p-cover">
+            <img src="images/practice-dispute.jpg" alt="Dispute Resolution">
+          </div>
+          <div class="p-top">
+            <div class="p-icon"><i class="fas fa-gavel"></i></div>
+            <span class="p-badge">Litigation</span>
+          </div>
+          <h3>Dispute Resolution</h3>
+          <p>Negotiation, arbitration, mediation, and litigation support when needed.</p>
+          <ul>
+            <li>Mediation & arbitration</li>
+            <li>Construction adjudication</li>
+            <li>Court representation</li>
+            <li>Settlement negotiations</li>
+          </ul>
+          <a class="p-link" href="#contact">Talk to us <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team -->
+  <section id="team" class="section team">
+    <div class="container">
+      <div class="section-head">
+        <h2>Our Team</h2>
+        <p>Experienced professionals dedicated to your success.</p>
+      </div>
+
+      <div class="team-wrap">
+        <div class="team-card">
+          <div class="team-media">
+            <img src="images/linire.jpeg" alt="Linire Mulima">
+          </div>
+
+          <div class="team-info">
+            <h3>Linire Mulima</h3>
+            <p class="role">Managing Partner</p>
+            <p>
+              Seasoned corporate lawyer with 27+ years’ experience in commercial transactions,
+              infrastructure projects, and corporate governance.
+            </p>
+
+            <div class="tags">
+              <span class="tag">LLB (Zambia)</span>
+              <span class="tag">LLM (London)</span>
+              <span class="tag">ZIA</span>
+            </div>
+
+            <div class="team-actions">
+              <a class="btn btn-primary btn-sm" href="mailto:linirem@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+              <a class="btn btn-ghost btn-sm" href="#"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section testimonials">
+    <div class="container">
+      <div class="section-head">
+        <h2>Client Testimonials</h2>
+        <p>What clients say about our work.</p>
+      </div>
+
+      <div class="t-grid">
+        <div class="t-card">
+          <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+          <p>“Exceptional legal advice during our expansion. Detailed, responsive and commercially sound.”</p>
+          <div class="t-author">
+            <div class="avatar">JB</div>
+            <div>
+              <strong>James M. Banda</strong>
+              <span>CEO, Mining Corporation Zambia</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="t-card">
+          <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+          <p>“Strong construction law expertise. They helped us navigate FIDIC issues and claims smoothly.”</p>
+          <div class="t-author">
+            <div class="avatar">SC</div>
+            <div>
+              <strong>Sarah N. Chanda</strong>
+              <span>Director, BuildCo Zambia</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="t-card">
+          <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+          <p>“Professional and thorough. Our merger was handled with excellence and compliance throughout.”</p>
+          <div class="t-author">
+            <div class="avatar">MP</div>
+            <div>
+              <strong>Michael K. Phiri</strong>
+              <span>Legal Manager, First Bank Zambia</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Insights (simple placeholder cards) -->
+  <section id="insights" class="section insights">
+    <div class="container">
+      <div class="section-head">
+        <h2>Legal Insights</h2>
+        <p>Latest updates and analysis from our legal experts.</p>
+      </div>
+
+      <div class="cards-3">
+        <div class="p-card">
+          <div class="p-cover">
+            <img src="images/insight-governance.jpg" alt="Corporate Governance">
+          </div>
+          <div class="p-top">
+            <div class="p-icon"><i class="fas fa-scale-balanced"></i></div>
+            <span class="p-badge">Governance</span>
+          </div>
+          <h3>Corporate Governance Updates</h3>
+          <p>Practical guidance on governance structures and compliance for Zambian entities.</p>
+          <a class="p-link" href="#contact">Request advisory <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="p-card">
+          <div class="p-cover">
+            <img src="images/insight-construction.jpg" alt="Construction Contracts">
+          </div>
+          <div class="p-top">
+            <div class="p-icon"><i class="fas fa-helmet-safety"></i></div>
+            <span class="p-badge">FIDIC</span>
+          </div>
+          <h3>FIDIC Contracts in Practice</h3>
+          <p>How to manage claims, variations, and risk allocation in large infrastructure projects.</p>
+          <a class="p-link" href="#contact">Speak to a lawyer <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="p-card">
+          <div class="p-cover">
+            <img src="images/insight-banking.jpg" alt="Banking Regulations">
+          </div>
+          <div class="p-top">
+            <div class="p-icon"><i class="fas fa-landmark"></i></div>
+            <span class="p-badge">Finance</span>
+          </div>
+          <h3>Banking & Regulatory Trends</h3>
+          <p>Key points institutions and borrowers should consider in documentation and compliance.</p>
+          <a class="p-link" href="#contact">Get support <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section contact">
+    <div class="container">
+      <div class="section-head">
+        <h2>Get In Touch</h2>
+        <p>Ready to discuss your legal needs? Contact us today.</p>
+      </div>
+
+      <div class="grid-2 contact-grid">
+        <div class="card soft">
+          <h3>Office Information</h3>
+
+          <div class="info-row">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <strong>Address</strong>
+              <p>Lot 3052/M/E Zambezi Road Extension, Foxdale, Lusaka, Zambia</p>
+            </div>
+          </div>
+
+          <div class="info-row">
+            <i class="fas fa-phone"></i>
+            <div>
+              <strong>Phone</strong>
+              <p><a href="tel:+260977450621">+260 977 450621</a></p>
+            </div>
+          </div>
+
+          <div class="info-row">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <strong>Email</strong>
+              <p><a href="mailto:linirem@gmail.com">linirem@gmail.com</a></p>
+            </div>
+          </div>
+
+          <div class="info-row">
+            <i class="fas fa-clock"></i>
+            <div>
+              <strong>Hours</strong>
+              <p>Mon–Fri: 08:00–17:00</p>
+            </div>
+          </div>
+
+          <div class="mini-cta">
+            <a class="btn btn-ghost" href="tel:+260977450621"><i class="fas fa-phone"></i> Call Now</a>
+            <a class="btn btn-primary" href="mailto:linirem@gmail.com"><i class="fas fa-envelope"></i> Email Us</a>
+          </div>
+        </div>
+
+        <div class="card soft">
+          <h3>Request a Consultation</h3>
+
+          <form id="consultationForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" required />
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName" required />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" required />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="service">Service Required</label>
+              <select id="service" name="service" required>
+                <option value="">Select a Service</option>
+                <option>Corporate & Business Advisory</option>
+                <option>Commercial Law</option>
+                <option>Construction Law</option>
+                <option>Corporate Governance</option>
+                <option>Regulatory & Compliance</option>
+                <option>Banking & Finance Law</option>
+                <option>Property Law & Conveyancing</option>
+                <option>Employment & Labour Law</option>
+                <option>Dispute Resolution</option>
+                <option>Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">How can we help?</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+
+            <div class="form-check">
+              <input type="checkbox" id="consent" required />
+              <label for="consent">I agree to the privacy policy and consent to being contacted.</label>
+            </div>
+
+            <button type="submit" class="btn btn-primary">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Map inside Contact -->
+      <div class="card soft" style="margin-top:16px;">
+        <h3 style="margin-top:0;">Office Location</h3>
+        <div class="map">
+          <iframe
+            title="Linire Mulima & Company Location"
+            loading="lazy"
+            allowfullscreen
+            referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps?q=Linire%20Mulima%20%26%20Company%2C%20Foxdale%2C%20Lusaka%2C%20Zambia&output=embed">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+<!--Peter-->
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="footer-brand">
+            <img src="images/logo-white.svg" alt="Linire Mulima & Company" class="footer-logo">
+            <p>
+              Premier commercial law practice in Zambia delivering excellence with integrity,
+              confidentiality, and results.
+            </p>
+          </div>
+
+          <div class="footer-social">
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="#" aria-label="X / Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Practice Areas</h4>
+          <ul>
+            <li><a href="#practice">Corporate & Business Advisory</a></li>
+            <li><a href="#practice">Commercial Law</a></li>
+            <li><a href="#practice">Construction & FIDIC</a></li>
+            <li><a href="#practice">Banking & Finance</a></li>
+            <li><a href="#practice">Property Law</a></li>
+            <li><a href="#practice">Dispute Resolution</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul class="footer-contact">
+            <li><i class="fas fa-location-dot"></i> Foxdale, Lusaka, Zambia</li>
+            <li><i class="fas fa-phone"></i> <a href="tel:+260977450621">+260 977 450621</a></li>
+            <li><i class="fas fa-envelope"></i> <a href="mailto:linirem@gmail.com">linirem@gmail.com</a></li>
+          </ul>
+
+          <form class="newsletter" onsubmit="return false;">
+            <label>Newsletter</label>
+            <div class="newsletter-row">
+              <input type="email" placeholder="Email address" aria-label="Email address">
+              <button type="button" class="btn btn-primary btn-sm">Subscribe</button>
+            </div>
+            <small>Occasional legal updates. No spam.</small>
+          </form>
+        </div>
+
+        <div class="footer-col">
+          <h4>Find Us</h4>
+          <div class="map">
+            <iframe
+              title="Linire Mulima & Company Location"
+              loading="lazy"
+              allowfullscreen
+              referrerpolicy="no-referrer-when-downgrade"
+              src="https://www.google.com/maps?q=Linire%20Mulima%20%26%20Company%2C%20Foxdale%2C%20Lusaka%2C%20Zambia&output=embed">
+            </iframe>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© <span id="year"></span> Linire Mulima & Company. All rights reserved.</p>
+        <p class="fineprint">
+          Disclaimer: This website provides general information and does not constitute legal advice.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile drawer
+    const navToggle = document.getElementById("navToggle");
+    const mobileDrawer = document.getElementById("mobileDrawer");
+    const mobileClose = document.getElementById("mobileClose");
+    const yearEl = document.getElementById("year");
+
+    if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+    function openDrawer() {
+      mobileDrawer.classList.add("open");
+      navToggle.setAttribute("aria-expanded", "true");
+      mobileDrawer.setAttribute("aria-hidden", "false");
+    }
+
+    function closeDrawer() {
+      mobileDrawer.classList.remove("open");
+      navToggle.setAttribute("aria-expanded", "false");
+      mobileDrawer.setAttribute("aria-hidden", "true");
+    }
+
+    navToggle?.addEventListener("click", openDrawer);
+    mobileClose?.addEventListener("click", closeDrawer);
+
+    mobileDrawer?.addEventListener("click", (e) => {
+      if (e.target.classList.contains("m-link") || e.target.tagName === "A") closeDrawer();
+    });
+
+    // Active link highlight on scroll
+    const sections = document.querySelectorAll("section[id]");
+    const navLinks = document.querySelectorAll(".nav-link");
+
+    function onScroll() {
+      let scrollY = window.pageYOffset;
+
+      sections.forEach((sec) => {
+        const top = sec.offsetTop - 120;
+        const height = sec.offsetHeight;
+        const id = sec.getAttribute("id");
+
+        if (scrollY >= top && scrollY < top + height) {
+          navLinks.forEach((a) => a.classList.remove("active"));
+          document.querySelector(`.nav-link[href="#${id}"]`)?.classList.add("active");
+        }
+      });
+    }
+
+    window.addEventListener("scroll", onScroll);
+    onScroll();
+  </script>
+</body>
+</html>

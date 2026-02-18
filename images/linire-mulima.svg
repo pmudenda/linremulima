@@ -1,0 +1,8 @@
+<svg width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+  <rect width="300" height="300" fill="#CDD3D8"/>
+  <circle cx="150" cy="120" r="50" fill="#81828B"/>
+  <circle cx="150" cy="100" r="30" fill="#3F4151"/>
+  <rect x="100" y="160" width="100" height="120" fill="#171A32" rx="10"/>
+  <text x="150" y="220" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="#FFFFFF" text-anchor="middle">Linire Mulima</text>
+  <text x="150" y="240" font-family="Inter, sans-serif" font-size="10" fill="#1199CC" text-anchor="middle">Managing Partner</text>
+</svg>
